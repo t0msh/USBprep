@@ -42,10 +42,10 @@ if ($drivecount -lt 1)
                 }
                 if ($prep = $true)
                 {
-                    New-Item -Name disk,txt -ItemType file -Force | Out-Null
-                    New-Item -Path disk.txt "SEL DISK $diskid"
-                    New-Item -Path disk.txt "SEL PART 1"
-                    New-Item -Path disk.txt "INACTIVE"
+                    New-Item -Name disk.txt -ItemType file -Force | Out-Null
+                    Add-Content -Path disk.txt "SEL DISK $diskid"
+                    Add-Content -Path disk.txt "SEL PART 1"
+                    Add-Content -Path disk.txt "INACTIVE"
                     $diskprep | Out-Null
                     Write-Host "Drive $diskmodel ($disksize) is now ready for BitLocker encryption!" -ForegroundColor Green
                     Remove-Item -path disk.txt -force
