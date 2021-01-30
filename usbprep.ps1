@@ -1,4 +1,7 @@
+<#
+USBprep by Tom Shute
 
+#>
 
 $counter = 0
 $usbdrive = Get-WmiObject win32_diskdrive | Where-Object {$_.interfacetype -like 'USB'}
