@@ -1,4 +1,11 @@
 # usbprep
+```
+ _____ _____ _____                 
+|  |  |   __| __  |___ ___ ___ ___ 
+|  |  |__   | __ -| . |  _| -_| . |
+|_____|_____|_____|  _|_| |___|  _|
+                  |_|         |_|      
+```
 A tool for IT admins that enforce BitLocker Encryption removable drives and have a lot of removable USB media.
 
 ## Why?

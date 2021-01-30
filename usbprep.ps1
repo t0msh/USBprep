@@ -1,7 +1,15 @@
+
+
 $counter = 0
 $usbdrive = Get-WmiObject win32_diskdrive | Where-Object {$_.interfacetype -like 'USB'}
 $drivenum = $usbdrive | Measure-Object
 $drivecount = $drivenum.Count
+
+Write-Host " _____ _____ _____                 
+|  |  |   __| __  |___ ___ ___ ___ 
+|  |  |__   | __ -| . |  _| -_| . |
+|_____|_____|_____|  _|_| |___|  _|
+                  |_|         |_|  " -ForegroundColor Magenta
 
 if ($drivecount -lt 1)
 {
